@@ -16,7 +16,7 @@ The key parts of the provided data are the test and training data sets, which ar
 
 * the subject file (subject_test.txt or subject_train.txt): These files contain a single column with the subject number annotation. One row for each observation (same as respective X files).
 
-The major tranformation performed in this script is to merged the test and train sets, annotate each observation with Subject and Activity information, extract relevant columns, and provide an output tidy data table of the mean of each columns for each subject and activity pair. 
+The major tranformation performed in this script is to merge the test and train sets, annotate each observation with Subject and Activity information, extract relevant columns, and provide an output tidy data table of the mean of each columns for each subject and activity pair. 
 
 
 ##Variables (Data)
@@ -140,3 +140,5 @@ In order of appearance:
 
 `tidy` : final tidy dataset resulting from grouping `merged_filtered` by Subject, then by Activity, and taking the mean of each column. Data frame with 180 rows and 73 columns.  
 
+##Specs
+Run on Mac OSX 10.10.2. R version 3.1.2. 2015-04-20. 
