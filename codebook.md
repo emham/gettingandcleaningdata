@@ -93,6 +93,7 @@ The complete list of variables (73) is:
 ###This section refers to variables in the sense of R objects used in the script.
 
 In order of appearance:
+
 `widths` : Vector of the fwf widths specifying the format of the test and train data files. each column is 15 characters wide with one character separating them. There are 561 columns.
 
 `test` : The variable the X_test.txt file is read into. Data frame of 2947 observations of 561 variables. 
