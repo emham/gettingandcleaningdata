@@ -97,6 +97,7 @@ In order of appearance:
 `widths` : Vector of the fwf widths specifying the format of the test and train data files. each column is 15 characters wide with one character separating them. There are 561 columns.
 
 `test` : The variable the X_test.txt file is read into. Data frame of 2947 observations of 561 variables. 
+
 `train`: The variable the X_train.txt file is read into. Data frame of 7352 observations of 561 variables. 
 
 `merged`: Data frame of the merged test and train data frames. 10299 rows and 561 columns.
@@ -110,11 +111,15 @@ In order of appearance:
 `col_headers` : Column names to be applied to `merged_filtered`. Leading numeric characters removed. Applied via names(merged_filtered) to column headers. 
 
 `test_subject` : Data frame of subject numbers from test set. 
+
 `train_subject`: Data frame of subject numbers from train set.
+
 `merged_subject`: Resulting data frame from joining `test_subject` and `train_subject`. cbind() used to add this column as the first column of `merged_filtered`
 
 `test_activity` : Data frame of activity key numbers from test set.
+
 `train_activity` : Data frame of activity key numbers from train set.
+
 `merged_activity` : Resulting data frame from joining `test_activity` and `train_activity`.
 
 `activity_names` : Vector equivalent to `merged_activity` but with activity keys (1-6) replaced with activity names as characters. cbind() used to attach this column as second column of merged_filtered. 
