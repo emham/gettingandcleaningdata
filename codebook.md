@@ -10,11 +10,11 @@ run_analysis.R was written to perform some basic processing of wearable motion s
 Data was obtained from UCI at this [link](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip).
 The key parts of the provided data are the test and training data sets, which are segretated into separate folders within the HAR Dataset folder. Each of the test and train folders contains: 
 
-*the 'X' file (X_test.txt or X_train.txt): These files contain all the measured data, without subject or activity information. Files are fixed-width, with 561 columns. 
+* the 'X' file (X_test.txt or X_train.txt): These files contain all the measured data, without subject or activity information. Files are fixed-width, with 561 columns. 
 
-*the 'Y' file (Y_test.txt or Y_train.txt): These files contain a single column with the Activity annotation, using a key 1-6 to represent the six activities (walking, walking upstairs, walking downstairs, standing, sitting or laying.) One row for each observation (same as respective X files.)
+* the 'Y' file (Y_test.txt or Y_train.txt): These files contain a single column with the Activity annotation, using a key 1-6 to represent the six activities (walking, walking upstairs, walking downstairs, standing, sitting or laying.) One row for each observation (same as respective X files.)
 
-*the subject file (subject_test.txt or subject_train.txt): These files contain a single column with the subject number annotation. One row for each observation (same as respective X files).
+* the subject file (subject_test.txt or subject_train.txt): These files contain a single column with the subject number annotation. One row for each observation (same as respective X files).
 
 The major tranformation performed in this script is to merged the test and train sets, annotate each observation with Subject and Activity information, extract relevant columns, and provide an output tidy data table of the mean of each columns for each subject and activity pair. 
 
