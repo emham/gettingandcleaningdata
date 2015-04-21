@@ -7,7 +7,7 @@ Hamilton,E.
 run_analysis.R was written to perform some basic processing of wearable motion sensor data [from UCI](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones). The script reads in the training and test datasets from fwf files and merges them, adds columns for the subject number and activity, extracts only mean and standard deviation variables (complete list below), and returns a new, tidy dataset consisting of only the mean of each variable for each subject and activity combination. 
 
 ##The Data
-Data was obtained from UCI at this [link](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip).
+Data was obtained from UCI [(download)](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip).
 The key parts of the provided data are the test and training data sets, which are segretated into separate folders within the HAR Dataset folder. Each of the test and train folders contains: 
 
 * the 'X' file (X_test.txt or X_train.txt): These files contain all the measured data, without subject or activity information. Files are fixed-width, with 561 columns. 
@@ -27,6 +27,7 @@ included in the final analysis. In total, 71 variables were extracted from the o
 dataset and two columns were added: one for 'Subject' and one for 'Activity'.
 
 The complete list of variables (73) is:
+
 "Subject"                              
 "Activity"                            
 "tBodyAcc-mean()-X"                    
