@@ -54,7 +54,7 @@ The complete list of variables (73) is:
 "tBodyGyro-std()-X"                   
 "tBodyGyro-std()-Y"                    
 "tBodyGyro-std()-Z"                   
-"tBodyGyroJerk-mean()-X"               
+"tBodyGyroJerk-mean()-X"           
 "tBodyGyroJerk-mean()-Y"              
 "tBodyGyroJerk-mean()-Z"               
 "tBodyGyroJerk-std()-X"               
@@ -89,18 +89,20 @@ The complete list of variables (73) is:
 "fBodyGyro-std()-Z"                    
 "fBodyAccMag-mean()"                  
 "fBodyAccMag-std()"                   
-"fBodyBodyAccJerkMag-mean()"          
-"fBodyBodyAccJerkMag-std()"            
+"fBodyBodyAccJerkMag-mean()"        
+"fBodyBodyAccJerkMag-std()"    
 "fBodyBodyGyroMag-mean()"             
 "fBodyBodyGyroMag-std()"
-"fBodyBodyGyroJerkMag-mean()"         
+
+"fBodyBodyGyroJerkMag-mean()"    
+
 "fBodyBodyGyroJerkMag-std()"           
-"angle(tBodyAccJerkMean),gravityMean)"
+"angle(tBodyAccJerkMean),gravityMean)"  
 "angle(tBodyGyroMean,gravityMean)"     
-"angle(tBodyGyroJerkMean,gravityMean)"
+"angle(tBodyGyroJerkMean,gravityMean)"  
 "angle(X,gravityMean)"                 
-"angle(Y,gravityMean)"                
-"angle(Z,gravityMean)"
+"angle(Y,gravityMean)"                  
+"angle(Z,gravityMean)"  
 
 
 ##Variables (Code)
