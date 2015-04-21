@@ -92,10 +92,8 @@ The complete list of variables (73) is:
 "fBodyBodyAccJerkMag-mean()"        
 "fBodyBodyAccJerkMag-std()"    
 "fBodyBodyGyroMag-mean()"             
-"fBodyBodyGyroMag-std()"
-
+"fBodyBodyGyroMag-std()"  
 "fBodyBodyGyroJerkMag-mean()"    
-
 "fBodyBodyGyroJerkMag-std()"           
 "angle(tBodyAccJerkMean),gravityMean)"  
 "angle(tBodyGyroMean,gravityMean)"     
