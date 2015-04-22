@@ -7,8 +7,12 @@ Hamilton,E.
 run_analysis.R was written to perform some basic processing of wearable motion sensor data [from UCI](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones). The script reads in the training and test datasets from fwf files and merges them, adds columns for the subject number and activity, extracts only mean and standard deviation variables (complete list below), and returns a new, tidy dataset consisting of only the mean of each variable for each subject and activity combination. 
 
 ##The Data
-Data was obtained from UCI [(download)](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip).
-The key parts of the provided data are the test and training data sets, which are segretated into separate folders within the HAR Dataset folder. Each of the test and train folders contains: 
+Data was obtained from UCI [(download)](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip). 
+Thirty human volunteers wore Samsung Galaxy smartphone on their waist while performing six physical activities. 
+Researchers used the built-in accelerometer and gyroscope to measure 3-axial linear acceleration 
+and 3-axial angular velocity at a constant rate of 50Hz. Acceleration was split into body and gravity components.
+The key parts of the provided data are the test and training data sets, which are segretated into separate folders 
+within the HAR Dataset folder. Each of the test and train folders contains: 
 
 * the 'X' file (X_test.txt or X_train.txt): These files contain all the measured data, without subject or activity information. Files are fixed-width, with 561 columns. 
 
@@ -23,85 +27,81 @@ The major tranformation performed in this script is to merge the test and train 
 ###This section refers to “variables” in the sense of observed measurements, or columns in the data frame.
 
 Only mean and standard deviation variables were extracted. meanFreq variables were not
-included in the final analysis. In total, 71 variables were extracted from the original 
+included in the final analysis. In total, 66 variables were extracted from the original 
 dataset and two columns were added: one for 'Subject' and one for 'Activity'.
 
-The complete list of variables (73) is:
+The complete list of variables (68) is:
 
-"Subject"                              
-"Activity"                            
-"tBodyAcc-mean()-X"                    
-"tBodyAcc-mean()-Y"                   
-"tBodyAcc-mean()-Z"                    
-"tBodyAcc-std()-X"                    
-"tBodyAcc-std()-Y"                     
-"tBodyAcc-std()-Z"                    
-"tGravityAcc-mean()-X"                 
-"tGravityAcc-mean()-Y"                
-"tGravityAcc-mean()-Z"                 
-"tGravityAcc-std()-X"                 
-"tGravityAcc-std()-Y"                  
-"tGravityAcc-std()-Z"                 
-"tBodyAccJerk-mean()-X"                
-"tBodyAccJerk-mean()-Y"               
-"tBodyAccJerk-mean()-Z"                
-"tBodyAccJerk-std()-X"                
-"tBodyAccJerk-std()-Y"                 
-"tBodyAccJerk-std()-Z"                
-"tBodyGyro-mean()-X"                   
-"tBodyGyro-mean()-Y"                  
-"tBodyGyro-mean()-Z"                   
-"tBodyGyro-std()-X"                   
-"tBodyGyro-std()-Y"                    
-"tBodyGyro-std()-Z"                   
-"tBodyGyroJerk-mean()-X"           
-"tBodyGyroJerk-mean()-Y"              
-"tBodyGyroJerk-mean()-Z"               
-"tBodyGyroJerk-std()-X"               
-"tBodyGyroJerk-std()-Y"                
-"tBodyGyroJerk-std()-Z"               
-"tBodyAccMag-mean()"                   
-"tGravityAccMag-mean()"               
-"tGravityAccMag-std()"                 
-"tBodyAccJerkMag-mean()"              
-"tBodyAccJerkMag-std()"                
-"tBodyGyroMag-mean()"                 
-"tBodyGyroMag-std()"                   	
-"tBodyGyroJerkMag-mean()"             
-"tBodyGyroJerkMag-std()"               
-"fBodyAcc-mean()-X"                   
-"fBodyAcc-mean()-Y"                    
-"fBodyAcc-mean()-Z"                   
-"fBodyAcc-std()-X"                     
-"fBodyAcc-std()-Y"                    
-"fBodyAcc-std()-Z"                     
-"fBodyAccJerk-mean()-X"               
-"fBodyAccJerk-mean()-Y"               
-"fBodyAccJerk-mean()-Z"               
-"fBodyAccJerk-std()-X"                 
-"fBodyAccJerk-std()-Y"                
-"fBodyAccJerk-std()-Z"                 
-"fBodyGyro-mean()-X"                  
-"fBodyGyro-mean()-Y"                   
-"fBodyGyro-mean()-Z"                  
-"fBodyGyro-std()-X"                    
-"fBodyGyro-std()-Y"                   
-"fBodyGyro-std()-Z"                    
-"fBodyAccMag-mean()"                  
-"fBodyAccMag-std()"                   
-"fBodyBodyAccJerkMag-mean()"        
-"fBodyBodyAccJerkMag-std()"    
-"fBodyBodyGyroMag-mean()"             
-"fBodyBodyGyroMag-std()"  
-"fBodyBodyGyroJerkMag-mean()"    
-"fBodyBodyGyroJerkMag-std()"           
-"angle(tBodyAccJerkMean),gravityMean)"  
-"angle(tBodyGyroMean,gravityMean)"     
-"angle(tBodyGyroJerkMean,gravityMean)"  
-"angle(X,gravityMean)"                 
-"angle(Y,gravityMean)"                  
-"angle(Z,gravityMean)"  
+"Subject" - Identified by numbers 1-30                            
+"Activity" - Walking, Walking_Upstairs, Walking_Downstairs, Laying, Sitting, or Standing              
+"tBodyAcc-mean()-X" - mean, body acceleration, x-axis              
+"tBodyAcc-mean()-Y" - mean, body acceleration, y-axis              
+"tBodyAcc-mean()-Z" - mean, body acceleration, z-axis
+"tBodyAcc-std()-X" - standard deviation, body acceleration, x-axis       
+"tBodyAcc-std()-Y"  - standard deviation, body acceleration, y-axis   
+"tBodyAcc-std()-Z" - standard deviation, body acceleration, z-axis              
+"tGravityAcc-mean()-X" - mean, gravity acceleration, x-axis            
+"tGravityAcc-mean()-Y"  - mean, gravity acceleration, y-axis             
+"tGravityAcc-mean()-Z" - mean, gravity acceleration, z-axis    
+"tGravityAcc-std()-X" - standard deviation, gravity acceleration, x-axis
+"tGravityAcc-std()-Y" - standard deviation, gravity acceleration, y-axis
+"tGravityAcc-std()-Z" - standard deviation, gravity acceleration, z-axis
+"tBodyAccJerk-mean()-X" - mean, body acceleration jerk, x-axis
+"tBodyAccJerk-mean()-Y" - mean, body acceleration jerk, y-axis  
+"tBodyAccJerk-mean()-Z" - mean, body acceleration jerk, z-axis            
+"tBodyAccJerk-std()-X" - standard deviation, body acceleration jerk, x-axis
+"tBodyAccJerk-std()-Y" - standard deviation, body acceleration jerk, y-axis              
+"tBodyAccJerk-std()-Z" - standard deviation, body acceleration jerk, z-axis           
+"tBodyGyro-mean()-X" - mean, body gyroscope, x-axis          
+"tBodyGyro-mean()-Y" - mean, body gyroscope, y-axis             
+"tBodyGyro-mean()-Z" - mean, body gyroscope, z-axis      
+"tBodyGyro-std()-X" - standard deviation, body gyroscope, x-axis        
+"tBodyGyro-std()-Y" - standard deviation, body gyroscope, y-axis            
+"tBodyGyro-std()-Z" - standard deviation, body gyroscope, z-axis      
+"tBodyGyroJerk-mean()-X" - mean, body gyroscope jerk, x-axis
+"tBodyGyroJerk-mean()-Y" - mean, body gyroscope jerk, y-axis
+"tBodyGyroJerk-mean()-Z" - mean, body gyroscope jerk, z-axis             
+"tBodyGyroJerk-std()-X" - standard deviation, body gyroscope jerk, x-axis  
+"tBodyGyroJerk-std()-Y" - standard deviation, body gyroscope jerk, y-axis       
+"tBodyGyroJerk-std()-Z" - standard deviation, body gyroscope jerk, z-axis
+"tBodyAccMag-mean()" - mean, body acceleration magnitude  
+"tBodyAccMag-std()" - standard deviation, body acceleration magnitude
+"tGravityAccMag-mean()" - mean, gravity acceleration magnitude             
+"tGravityAccMag-std()"  - standard deviation, gravity acceleration magnitude               
+"tBodyAccJerkMag-mean()" - mean, body acceleration jerk magnitude            
+"tBodyAccJerkMag-std()" - standard deviation, body acceleration jerk magnitude              
+"tBodyGyroMag-mean()" - mean, body gyroscope magnitude            
+"tBodyGyroMag-std()" - standard deviation, body gyroscope magnitude               	
+"tBodyGyroJerkMag-mean()" - mean, body gyroscope jerk magnitude
+"tBodyGyroJerkMag-std()" - standard deviation, body gyroscope jerk magnitude         
+"fBodyAcc-mean()-X" - mean, FFT body acceleration, x-axis         
+"fBodyAcc-mean()-Y" - mean, FFT body acceleration, y-axis
+"fBodyAcc-mean()-Z" - mean, FFT body acceleration, z-axis
+"fBodyAcc-std()-X" - standard deviation, FFT body acceleration, x-axis             
+"fBodyAcc-std()-Y" - standard deviation, FFT body acceleration, y-axis                    
+"fBodyAcc-std()-Z" - standard deviation, FFT body acceleration, z-axis                    
+"fBodyAccJerk-mean()-X" - mean, FFT body acceleration jerk, x-axis           
+"fBodyAccJerk-mean()-Y" - mean, FFT body acceleration jerk, y-axis               
+"fBodyAccJerk-mean()-Z" - mean, FFT body acceleration jerk, z-axis                
+"fBodyAccJerk-std()-X" - standard deviation, FFT body acceleration jerk, x-axis  
+"fBodyAccJerk-std()-Y" - standard deviation, FFT body acceleration jerk, y-axis        
+"fBodyAccJerk-std()-Z" - standard deviation, FFT body acceleration jerk, z-axis            
+"fBodyGyro-mean()-X" - mean, FFT body gyroscope, x-axis               
+"fBodyGyro-mean()-Y" - mean, FFT body gyroscope, y-axis                
+"fBodyGyro-mean()-Z" - mean, FFT body gyroscope, z-axis                
+"fBodyGyro-std()-X" - standard deviation, FFT body gyroscope, x-axis               
+"fBodyGyro-std()-Y" - standard deviation, FFT body gyroscope, y-axis                
+"fBodyGyro-std()-Z" - standard deviation, FFT body gyroscope, z-axis                
+"fBodyAccMag-mean()" - mean, FFT body acceleration magnitude                
+"fBodyAccMag-std()" - standard deviation, FFT body acceleration magnitude                
+"fBodyBodyAccJerkMag-mean()" - mean, FFT body acceleration jerk magnitude     
+"fBodyBodyAccJerkMag-std()" - standard deviation, FFT body acceleration jerk magnitude   
+"fBodyBodyGyroMag-mean()" - mean, FFT body gyroscope magnitude            
+"fBodyBodyGyroMag-std()" - standard deviation, FFT body gyroscope magnitude 
+"fBodyBodyGyroJerkMag-mean()" - mean, FFT body gyroscope jerk magnitude  
+"fBodyBodyGyroJerkMag-std()" - standard deviation, FFT body gyroscope jerk magnitude  
 
+*FFT variables are Fast Fourier Transformed
 
 ##Variables (Code)
 ###This section refers to "variables" in the sense of R objects used in the script.
@@ -141,4 +141,5 @@ In order of appearance:
 `tidy` : final tidy dataset resulting from grouping `merged_filtered` by Subject, then by Activity, and taking the mean of each column. Data frame with 180 rows and 73 columns.  
 
 ##Specs
-Run on Mac OSX 10.10.2.  R version 3.1.2.  April 2015. 
+Run on Mac OSX 10.10.2.  R version 3.1.2.  April 2015.
+Packages: dplyr
