@@ -1,4 +1,4 @@
-setwd("/Users/Emily/Documents/Coursera/Getting and Cleaning Data/")
+#setwd("/Users/Emily/Documents/Coursera/Getting and Cleaning Data/")
 
 widths <- rep(c(-1, 15), times=561)
     #reads test dataset into a dataframe:
