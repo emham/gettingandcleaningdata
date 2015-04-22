@@ -143,4 +143,4 @@ In order of appearance:
 
 ##Specs
 Run on Mac OSX 10.10.2.  R version 3.1.2.  April 2015.      
-Packages: dplyr
+Packages: dplyr 0.4.1
