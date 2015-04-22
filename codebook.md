@@ -142,5 +142,5 @@ In order of appearance:
 `tidy` : final tidy dataset resulting from grouping `merged_filtered` by Subject, then by Activity, and taking the mean of each column. Data frame with 180 rows and 73 columns.  
 
 ##Specs
-Run on Mac OSX 10.10.2.  R version 3.1.2.  April 2015. 
+Run on Mac OSX 10.10.2.  R version 3.1.2.  April 2015.      
 Packages: dplyr
