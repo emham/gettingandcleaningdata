@@ -12,5 +12,6 @@ The whole analysis is performed in this one script. The only user-defined piece 
 1. Download data here: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip (and unzip)
 2. Set working directory to location of these files.
 3. Set output file name in script to your preference.
+4. Make sure dplyr package is installed.
 3. Run entirety of run_analysis.R
 4. View tidy data for summary info. 
