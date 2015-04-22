@@ -8,7 +8,7 @@ run_analysis.R was written to perform some basic processing of wearable motion s
 
 ##The Data
 Data was obtained from UCI [(download)](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip). 
-Thirty human volunteers wore Samsung Galaxy smartphone on their waist while performing six physical activities. 
+Thirty human volunteers wore Samsung Galaxy smartphone on their waists while performing six physical activities. 
 Researchers used the built-in accelerometer and gyroscope to measure 3-axial linear acceleration 
 and 3-axial angular velocity at a constant rate of 50Hz. Acceleration was split into body and gravity components.
 The key parts of the provided data are the test and training data sets, which are segretated into separate folders 
