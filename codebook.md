@@ -139,7 +139,7 @@ In order of appearance:
 
 `activity_names` : Vector equivalent to `merged_activity` but with activity keys (1-6) replaced with activity names as characters. cbind() used to attach this column as second column of merged_filtered. 
 
-`tidy` : final tidy dataset resulting from grouping `merged_filtered` by Subject, then by Activity, and taking the mean of each column. Data frame with 180 rows and 73 columns.  
+`tidy` : final tidy dataset resulting from grouping `merged_filtered` by Subject, then by Activity, and taking the mean of each column. Data frame with 180 rows and 68 columns.  
 
 ##Specs
 Run on Mac OSX 10.10.2.  R version 3.1.2.  April 2015.      
