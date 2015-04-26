@@ -102,7 +102,7 @@ The complete list of variables (68) is:
 "fBodyBodyGyroJerkMag-std()" - standard deviation, FFT body gyroscope jerk magnitude        
 
 
-*FFT variables are Fast Fourier Transformed
+*FFT variables are fast Fourier transformed
 
 ##Variables (Code)
 ###This section refers to "variables" in the sense of R objects used in the script.
